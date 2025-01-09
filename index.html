@@ -187,17 +187,6 @@
 
     <script>
         const now = new Date();
-        const rotatingDiv = document.querySelector('.word-of-day-container');
-
-        if (window.DeviceOrientationEvent) {
-            window.addEventListener('deviceorientationabsolute', (event) => {
-                const gamma = event.gamma || 0;
-                const clampedRotation = Math.max(-35, Math.min(35, gamma));
-                rotatingDiv.style.transform = `rotate(${clampedRotation}deg)`;
-            });
-        } else {
-            console.error('DeviceOrientationEvent is not supported on this device.');
-        }
 
         $(document).ready(function () {
             function crossfade() {

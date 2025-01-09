@@ -264,7 +264,45 @@ hr {
     box-shadow: 0px 1px 8px 0px rgba(0,0,0,0.75);
     border-radius: 5px;
     transform: rotate(15deg);
+    transition: transform 0.1 ease;
+    animation: rotateMotion 3s infinite ease-in-out;
 }
+
+@keyframes rotateMotion {
+    0% {
+      transform: rotate(-5deg);   /* Start at -5deg */
+    }
+    10% {
+      transform: rotate(-3deg);   /* Slight rotation */
+    }
+    20% {
+      transform: rotate(0deg);    /* Center position */
+    }
+    30% {
+      transform: rotate(3deg);    /* Slight right rotation */
+    }
+    40% {
+      transform: rotate(4deg);    /* Slightly more to the right */
+    }
+    50% {
+      transform: rotate(5deg);    /* Max right rotation */
+    }
+    60% {
+      transform: rotate(4deg);    /* Slightly less to the right */
+    }
+    70% {
+      transform: rotate(3deg);    /* Moving back to center */
+    }
+    80% {
+      transform: rotate(0deg);    /* Center position again */
+    }
+    90% {
+      transform: rotate(-3deg);   /* Slight left rotation */
+    }
+    100% {
+      transform: rotate(-5deg);   /* Back to -5deg */
+    }
+  }
 
 .word {
     font-size: 4em;

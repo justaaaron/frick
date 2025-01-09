@@ -228,9 +228,9 @@
     </script>
 
     <script>
-        const moreDetails = document.querySelector('.more-details-button');
+        const moreDetails = document.querySelector('.buy-tickets-button');
 
-        moreDetails.addEventListener('click', () => {
+        moreDetails.addEventListener('touchend', () => {
             if (document.querySelector('.options').classList.contains('hidden')) {
                 document.querySelector('.options').classList.remove('hidden');
             } else {

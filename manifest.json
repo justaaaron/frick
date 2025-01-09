@@ -1,7 +1,7 @@
 {
     "name": "StageCoach",
     "short_name": "StageCoach",
-    "start_url": "/index.html",
+    "start_url": "/frick/index.html",
     "icons": [
         {
           "src": "icons/manifest-icon-192.maskable.png",

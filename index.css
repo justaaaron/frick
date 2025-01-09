@@ -268,19 +268,19 @@ hr {
 
 @keyframes rotateMotion {
     0% {
-      transform: rotate(-3deg);   /* Start at -5deg */
+      transform: rotate(-10deg);   /* Start at -5deg */
     }
     25% {
         transform: rotate(0deg);
     }
     50% {
-        transform: rotate(3deg);
+        transform: rotate(10deg);
     }
     75% {
         transform: rotate(0deg);
     }
     100% {
-        transform: rotate(-3deg);
+        transform: rotate(-10deg);
     }
 
   }

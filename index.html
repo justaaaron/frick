@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StageCoach</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="manifest.json">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="header">
+            <div class="top-options">
+                <div class="bar-menu">
+                    <svg width="24px" height="24px" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.192" style="--darkreader-inline-stroke: var(--darkreader-text-cccccc, #c8c3bc);" data-darkreader-inline-stroke=""></g><g id="SVGRepo_iconCarrier"> <g clip-path="url(#clip0_429_11066)"> <path d="M3 6.00092H21M3 12.0009H21M3 18.0009H21" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="--darkreader-inline-stroke: var(--darkreader-text-ffffff, #e8e6e3);" data-darkreader-inline-stroke=""></path> </g> <defs> <clipPath id="clip0_429_11066"> <rect width="24" height="24" fill="white" transform="translate(0 0.000915527)" style="--darkreader-inline-fill: var(--darkreader-text-ffffff, #e8e6e3);" data-darkreader-inline-fill=""></rect> </clipPath> </defs> </g></svg>                </div>
+                <div class="tickets-text">Tickets</div>
+                <div class="shopping-cart-icon">
+                    <svg version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" style="--darkreader-inline-fill: var(--darkreader-background-000000, #000000);" data-darkreader-inline-fill="" xmlns:bx="https://boxy-svg.com" width="26px" height="26px" fill="#000000">
+                        <defs>
+                            <bx:export>
+                                <bx:file format="svg"/>
+                            </bx:export>
+                        </defs>
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                        <g id="SVGRepo_iconCarrier">
+                            <style type="text/css">
+                                .st0{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                                .st1{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:3;}
+                                .st2{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:10;}
+                                .st3{fill:none;}
+                            </style>
+                            <style class="darkreader darkreader--sync" media="screen"/>
+                            <path class="st0" d="M 27.977 10.125 L 26.074 19.75 L 9.332 22.2 C 8.571 22.288 8 22.9 8 23.6 C 8 24.388 8.666 25 9.522 25 L 26.074 25"/>
+                            <path class="st0" d="M 3.465 7.03 C 5.765 7.03 5.534 6.518 6.423 8.382 L 7 10 L 11 21"/>
+                            <line class="st0" x1="7" y1="10" x2="28" y2="10"/>
+                            <circle class="st0" cx="12.003" cy="26.98" r="1.823"/>
+                            <circle class="st0" cx="23.232" cy="27.256" r="1.744"/>
+                            <rect class="st3" width="536" height="680"/>
+                        </g>
+                    </svg>
+                </div>
+                
+            </div>
+            <div class="ticket-options">
+                <div class="active-tickets-button header-button">Active Tickets</div>
+                <div class="my-tickets-button header-button">My Tickets</div>
+                <div class="buy-tickets-button header-button">Buy Tickets</div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="qr-code-container">
+                <img src="qr-code.png" id="qr">
+            </div>
+            <div class="student-bg-text">
+                <div class="student-text stud-one">Student</div>
+                <div class="student-text stud-two">Student</div>
+                <div class="student-text stud-three">Student</div>
+                <div class="student-text stud-four">Student</div>
+                <div class="student-text stud-five">Student</div>
+                <div class="student-text stud-six">Student</div>
+            </div>
+            <div class="ticket-type-text">2024/25 South West Termrider Spring</div>
+            
+            <hr>
+            <div class="details">
+                <div class="name-student-logo">
+                    <div class="student-logo">
+                        <img id="student-img" src="student.png">
+                    </div>
+                    <div class="name">Aaron H</div>
+                </div>
+                <div class="price-container">
+                    <div class="price">£461.00</div>
+                </div>
+            </div>
+            <hr>
+
+            <div class="valid-text">Valid from: 00:00, 01 Jan 2024</div>
+
+            <div class="overflow-word-of-day">
+                <div class="word-of-day-container">
+                    <div class="moving-shapes">
+                        <svg class="shape shape-one">
+                            <circle cx="60" cy="60" r="60" stroke="black" stroke-width="0" fill="white" opacity="0.3" />
+                        </svg>
+                        <svg class="shape shape-two">
+                            <circle cx="10" cy="10" r="10" stroke="black" stroke-width="0" fill="white" opacity="0.8" />
+                        </svg>
+                        <svg class="shape shape-three">
+                            <circle cx="5" cy="5" r="5" stroke="black" stroke-width="0" fill="white" opacity="0.9" />
+                        </svg>
+                        <svg class="shape shape-four">
+                            <circle cx="5" cy="5" r="5" stroke="black" stroke-width="0" fill="white" opacity="0.9" />
+                        </svg>
+                        <svg class="shape shape-five">
+                            <circle cx="5" cy="5" r="5" stroke="black" stroke-width="0" fill="white" opacity="0.9" />
+                        </svg>
+                        <svg class="shape shape-six">
+                            <circle cx="50" cy="50" r="50" stroke="black" stroke-width="0" fill="white" opacity="0.3" />
+                        </svg>
+                        <svg class="shape shape-seven">
+                            <circle cx="30" cy="30" r="30" stroke="black" stroke-width="0" fill="white" opacity="0.7" />
+                        </svg>
+                        <svg class="shape shape-eight">
+                            <circle cx="40" cy="40" r="40" stroke="black" stroke-width="0" fill="white" opacity="0.5" />
+                        </svg>
+                        <svg class="shape shape-nine">
+                            <circle cx="30" cy="30" r="30" stroke="black" stroke-width="0" fill="white" opacity="0.7" />
+                        </svg>
+                        <svg class="shape shape-ten">
+                            <circle cx="20" cy="20" r="20" stroke="black" stroke-width="0" fill="white" opacity="0.5" />
+                        </svg>
+                        <svg class="shape shape-eleven">
+                            <circle cx="15" cy="15" r="15" stroke="black" stroke-width="0" fill="white" opacity="0.5" />
+                        </svg>
+                        <svg class="shape shape-twelve">
+                            <circle cx="25" cy="25" r="25" stroke="black" stroke-width="0" fill="white" opacity="0.7" />
+                        </svg>
+                        
+                    </div>
+                    <div class="word">Macaw</div>
+                    <div class="time">12:00</div>
+                </div>
+            </div>
+
+            <div class="ticket-expires">Ticket expires in: <span id="days"></span>d: <span id="hours"></span>h: <span id="mins"></span>m: <span id="secs"></span>s</div>
+
+            <div class="purchase-info">Exeter College students using a discount code - Please see the full terms and conditions before purchasing.</div>
+
+            <div class="id">22130-20250111113320056-24j6e</div>
+
+            <div class="more-details-button">
+                More details <b style="font-size: 1.5em;">></b>
+            </div>
+
+            <div class="options hidden">
+                <form>
+                    <input type="text" value="Macaw" id="word-of-day-input">
+                    <select id="color-select">
+                        <option value="green">Green</option>
+                        <option value="grey">Grey</option>
+                        <option value="blue">Blue</option>
+                        <option value="red">Red</option>
+                        <option value="orange">Orange</option>
+                    </select>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+    function update() {
+        // Get the current date
+        const currentDate = new Date();
+        const targetDate = new Date(2025, 3, 20); // Month is 0-indexed, so 3 is April
+        const timeDifference = targetDate - currentDate;
+        
+        // calculate the days, hours, minutes and seconds left
+        const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+    
+        const daysElement = document.getElementById('days');
+        const hoursElement = document.getElementById('hours');
+        const minsElement = document.getElementById('mins');
+        const secsElement = document.getElementById('secs');
+    
+        daysElement.innerHTML = days;
+        hoursElement.innerHTML = hours;
+        minsElement.innerHTML = minutes;
+        secsElement.innerHTML = seconds;
+    }
+    
+    setInterval(update, 1000);
+    </script>
+
+    <script>
+        const rotatingDiv = document.querySelector('.word-of-day-container');
+        const now = new Date();
+
+        // Ensure the device supports DeviceOrientationEvent
+        if (window.DeviceOrientationEvent) {
+            window.addEventListener('deviceorientation', (event) => {
+                // Get the gamma value (rotation around the Y-axis)
+                const gamma = event.gamma || 0; // Gamma ranges from -90 to 90 degrees
+
+                // Map gamma to the range -35 to +35 degrees
+                const clampedRotation = Math.max(-35, Math.min(35, gamma));
+
+                // Apply rotation to the div
+                rotatingDiv.style.transform = `rotate(${clampedRotation}deg)`;
+            });
+        } else {
+            console.error('DeviceOrientationEvent is not supported on this device.');
+        }
+
+        $(document).ready(function () {
+            function crossfade() {
+                $('.word').animate({ opacity: 0 }, 1500);
+                $('.time').animate({ opacity: 1 }, 2000, function () {
+                    $('.word').animate({ opacity: 1 }, 1500);
+                    $('.time').animate({ opacity: 0 }, 1500, crossfade);
+                });
+            }
+
+            // Start the animation loop
+            crossfade();
+        });
+
+        timeText = document.querySelector('.time');
+        timeText.textContent = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+
+        setInterval(() => {
+            const now = new Date();
+            timeText.textContent = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+        }, 1000);
+
+    </script>
+
+    <script>
+        const moreDetails = document.querySelector('.more-details-button');
+
+        moreDetails.addEventListener('click', () => {
+            if (document.querySelector('.options').classList.contains('hidden')) {
+                document.querySelector('.options').classList.remove('hidden');
+            } else {
+                document.querySelector('.options').classList.add('hidden');
+            }
+        });
+
+        const wordInput = document.querySelector('#word-of-day-input');
+        const word = document.querySelector('.word');
+
+        wordInput.addEventListener('input', () => {
+            word.innerText = wordInput.value;
+        });
+
+        const colorSelect = document.querySelector('#color-select');
+        const wordOfDayContainer = document.querySelector('.word-of-day-container');
+
+        colorSelect.addEventListener('change', () => {
+            if (colorSelect.value === 'green') {
+                wordOfDayContainer.style.backgroundColor = '#00d23c';
+            } else if (colorSelect.value === 'grey') {
+                wordOfDayContainer.style.backgroundColor = '#9E938B';
+            } else if (colorSelect.value === 'blue') {
+                wordOfDayContainer.style.backgroundColor = '#02B0E0';
+            } else if (colorSelect.value === 'red') {
+                wordOfDayContainer.style.backgroundColor = '#FF3056';
+            } else if (colorSelect.value === 'orange') {
+                wordOfDayContainer.style.backgroundColor = '#FF7B07';
+            }
+        });
+    </script>
+
+    <script>
+        const shapes = document.querySelectorAll('.moving-shapes .shape');
+
+        // Define movement properties for each shape
+        const shapeProperties = Array.from(shapes).map(shape => {
+            const circle = shape.querySelector('circle');
+            const radius = parseInt(circle.getAttribute('r'), 10);
+
+            // Set a random speed for the shape
+            const speed = (20 / radius) * 0.1; // Smaller shapes move faster
+
+            // Return initial properties for the shape
+            return {
+                element: shape,
+                radius,
+                speed,
+                directionX: Math.random() > 0.5 ? 1 : -1, // Random initial direction
+                directionY: Math.random() > 0.5 ? 1 : -1,
+                positionX: Math.random() * (100 - radius), // Random position within bounds
+                positionY: Math.random() * (100 - radius)  // Random position within bounds
+            };
+        });
+
+        function moveShapes() {
+            shapeProperties.forEach(shapeProp => {
+                const { element, radius, speed, directionX, directionY } = shapeProp;
+
+                // Calculate new position
+                shapeProp.positionX += speed * directionX;
+                shapeProp.positionY += speed * directionY;
+
+                // Check boundaries (negative directions limited to their radius percentage)
+                if (shapeProp.positionX < -radius * 0.5) { // Allow half-radius overlap on the left
+                    shapeProp.positionX = -radius * 0.5;
+                    shapeProp.directionX *= -1;
+                } else if (shapeProp.positionX > 105 - radius * 0.5) { // Allow half-radius overlap on the right
+                    shapeProp.positionX = 105 - radius * 0.5;
+                    shapeProp.directionX *= -1;
+                }
+
+                if (shapeProp.positionY < -radius * 0.5) { // Allow half-radius overlap on the top
+                    shapeProp.positionY = -radius * 0.5;
+                    shapeProp.directionY *= -1;
+                } else if (shapeProp.positionY > 100 - radius * 0.5) { // Allow half-radius overlap on the bottom
+                    shapeProp.positionY = 100 - radius * 0.5;
+                    shapeProp.directionY *= -1;
+                }
+
+
+                // Update shape's position
+                element.style.left = `${shapeProp.positionX}%`;
+                element.style.top = `${shapeProp.positionY}%`;
+            });
+
+            // Continue the animation
+            requestAnimationFrame(moveShapes);
+        }
+
+        moveShapes();
+    </script>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('./service-worker.js').then(() => {
+                console.log('Service Worker Registered');
+            }).catch(error => {
+                console.error('Service Worker Registration Failed:', error);
+            });
+        }
+    </script>
+</body>
+</html>

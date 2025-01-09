@@ -268,38 +268,21 @@ hr {
 
 @keyframes rotateMotion {
     0% {
-      transform: rotate(-5deg);   /* Start at -5deg */
+      transform: rotate(-3deg);   /* Start at -5deg */
     }
-    10% {
-      transform: rotate(-3deg);   /* Slight rotation */
-    }
-    20% {
-      transform: rotate(0deg);    /* Center position */
-    }
-    30% {
-      transform: rotate(3deg);    /* Slight right rotation */
-    }
-    40% {
-      transform: rotate(4deg);    /* Slightly more to the right */
+    25% {
+        transform: rotate(0deg);
     }
     50% {
-      transform: rotate(5deg);    /* Max right rotation */
+        transform: rotate(3deg);
     }
-    60% {
-      transform: rotate(4deg);    /* Slightly less to the right */
-    }
-    70% {
-      transform: rotate(3deg);    /* Moving back to center */
-    }
-    80% {
-      transform: rotate(0deg);    /* Center position again */
-    }
-    90% {
-      transform: rotate(-3deg);   /* Slight left rotation */
+    75% {
+        transform: rotate(0deg);
     }
     100% {
-      transform: rotate(-5deg);   /* Back to -5deg */
+        transform: rotate(-3deg);
     }
+
   }
 
 .word {

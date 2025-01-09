@@ -263,7 +263,6 @@ hr {
     -moz-box-shadow: 0px 1px 8px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 1px 8px 0px rgba(0,0,0,0.75);
     border-radius: 5px;
-    transform: rotate(15deg);
     transition: transform 0.1 ease;
     animation: rotateMotion 3s infinite ease-in-out;
 }
@@ -305,7 +304,7 @@ hr {
   }
 
 .word {
-    font-size: 4em;
+    font-size: 3em;
     letter-spacing: 1px;
     font-weight: normal;
     letter-spacing: 4px;
@@ -315,7 +314,7 @@ hr {
 }
 
 .time {
-    font-size: 4em;
+    font-size: 3em;
     letter-spacing: 1px;
     font-weight: normal;
     letter-spacing: 4px;

@@ -186,19 +186,13 @@
     </script>
 
     <script>
-        const rotatingDiv = document.querySelector('.word-of-day-container');
         const now = new Date();
+        const rotatingDiv = document.querySelector('.word-of-day-container');
 
-        // Ensure the device supports DeviceOrientationEvent
         if (window.DeviceOrientationEvent) {
-            window.addEventListener('deviceorientation', (event) => {
-                // Get the gamma value (rotation around the Y-axis)
-                const gamma = event.gamma || 0; // Gamma ranges from -90 to 90 degrees
-
-                // Map gamma to the range -35 to +35 degrees
+            window.addEventListener('deviceorientationabsolute', (event) => {
+                const gamma = event.gamma || 0;
                 const clampedRotation = Math.max(-35, Math.min(35, gamma));
-
-                // Apply rotation to the div
                 rotatingDiv.style.transform = `rotate(${clampedRotation}deg)`;
             });
         } else {
